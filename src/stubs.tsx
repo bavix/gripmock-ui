@@ -65,7 +65,8 @@ const stubFilters = [
 ];
 
 export const StubList = () => {
-    return <List exporter={listExporter} filters={stubFilters}>
+    //filters={stubFilters}>
+    return <List exporter={listExporter}>
         <Datagrid rowClick="show">
             <TextField source="id" sortable={true} />
             <TextField source="service" sortable={true} />
