@@ -7,7 +7,7 @@ import loIteratee from 'lodash/iteratee'
 import Fuse from "fuse.js";
 
 const $api = (path: string, options: Options = {}) => {
-    const apiUrl = ''; // http://localhost:4771/api';
+    const apiUrl = '/api'; // http://localhost:4771/api';
 
     options.headers = (options.headers || new Headers({Accept: 'application/json'})) as Headers;
     options.headers.set('X-GripMock-RequestInternal', '92b4d5a9-c74b-4ac0-989c-717f80acba22')
