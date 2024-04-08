@@ -16,7 +16,7 @@
     "react-admin": "^4.16.15",
     "react-dom": "^18.2.0",
     "@types/lodash": "^4.17.0",
-    "@types/node": "^20.12.4",
+    "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
