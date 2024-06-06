@@ -1,8 +1,18 @@
 # Changelog
 
+## v1.0.0-alpha4 - 2024-06-05
+
+### What's Changed
+
+* Bump [@types](https://github.com/types)/node from 20.14.1 to 20.14.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/71
+* Bump prettier from 3.3.0 to 3.3.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/72
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha3...v1.0.0-alpha4
+
 ## v1.0.0-alpha3 - 2024-06-04
 
 ## What's Changed
+
 * Bump vite from 5.2.10 to 5.2.11 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/49
 * Bump [@types](https://github.com/types)/node from 20.12.7 to 20.12.8 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/51
 * Bump react-admin from 4.16.16 to 4.16.17 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/50
@@ -25,7 +35,4 @@
 * Bump prettier from 3.2.5 to 3.3.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/69
 * Bump [@types](https://github.com/types)/node from 20.14.0 to 20.14.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/70
 
-
 **Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha2...v1.0.0-alpha3
-
-
