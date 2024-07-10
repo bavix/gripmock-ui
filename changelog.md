@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.0-alpha6 - 2024-07-10
+
+### What's Changed
+
+* Bump [@types](https://github.com/types)/node from 20.14.9 to 20.14.10 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/95
+* Bump react-admin from 5.0.3 to 5.0.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/96
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha5...v1.0.0-alpha6
+
 ## v1.0.0-alpha5 - 2024-07-03
 
 ### What's Changed
