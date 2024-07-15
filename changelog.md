@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.0-alpha7 - 2024-07-15
+
+### What's Changed
+
+* Bump eslint-plugin-react from 7.34.3 to 7.34.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/97
+* Bump prettier from 3.3.2 to 3.3.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/98
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha6...v1.0.0-alpha7
+
 ## v1.0.0-alpha6 - 2024-07-10
 
 ### What's Changed
