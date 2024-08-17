@@ -16,7 +16,6 @@ export default defineConfig({
             output: {
                 manualChunks: {
                     'ra': ['ra-core'],
-                    'react': ['react', 'react-dom'],
                     'react-admin': ['react-admin'],
                     'react-admin-utils': ['@bavix/react-admin-json-view'],
                     'mui': ['@mui/material', '@mui/icons-material'],
