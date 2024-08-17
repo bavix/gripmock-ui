@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.0.0-alpha8 - 2024-08-17
+
+### What's Changed
+
+* Bump [@types](https://github.com/types)/lodash from 4.17.6 to 4.17.7 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/100
+* Bump vite from 5.3.3 to 5.3.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/99
+* Bump [@types](https://github.com/types)/node from 20.14.10 to 20.14.11 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/101
+* Bump react-admin from 5.0.4 to 5.0.5 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/102
+* Bump eslint-plugin-react from 7.34.4 to 7.35.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/103
+* Bump typescript from 5.5.3 to 5.5.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/104
+* Bump [@types](https://github.com/types)/node from 20.14.11 to 20.14.12 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/105
+* Bump vite from 5.3.4 to 5.3.5 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/106
+* Bump react-admin from 5.0.5 to 5.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/107
+* Bump bavix/.github from 0.3.0 to 0.3.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/108
+* Bump [@types](https://github.com/types)/node from 20.14.12 to 22.0.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/109
+* Bump [@types](https://github.com/types)/node from 22.0.0 to 22.0.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/111
+* Bump [@types](https://github.com/types)/node from 22.0.2 to 22.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/114
+* Bump bavix/.github from 0.3.2 to 0.3.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/112
+* Bump react-admin from 5.1.0 to 5.1.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/113
+* Bump vite from 5.3.5 to 5.4.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/116
+* Bump [@types](https://github.com/types)/node from 22.1.0 to 22.2.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/117
+* Bump [@types](https://github.com/types)/node from 22.2.0 to 22.3.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/119
+* Bump vite from 5.4.0 to 5.4.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/120
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 5.62.0 to 8.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/118
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha7...v1.0.0-alpha8
+
 ## v1.0.0-alpha7 - 2024-07-15
 
 ### What's Changed
