@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.0-alpha10 - 2024-08-28
+
+### What's Changed
+
+* Bump [@types](https://github.com/types)/node from 22.4.2 to 22.5.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/128
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.2.0 to 8.3.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/130
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.2.0 to 8.3.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/129
+* Bump micromatch from 4.0.7 to 4.0.8 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/131
+* Bump [@types](https://github.com/types)/node from 22.5.0 to 22.5.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/132
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha9...v1.0.0-alpha10
+
 ## v1.0.0-alpha9 - 2024-08-21
 
 ### What's Changed
