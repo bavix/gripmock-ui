@@ -13,7 +13,7 @@
     "@bavix/react-admin-json-view": "^2.1",
     "fuse.js": "^7.0",
     "react": "^18.3",
-    "react-admin": "^5.2",
+    "react-admin": "^5.3",
     "react-dom": "^18.3",
     "@types/lodash": "^4.17",
     "@types/node": "^22.7",
