@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.0-beta2 - 2024-11-04
+
+### What's Changed
+
+* beta2 by [@rez1dent3](https://github.com/rez1dent3) in https://github.com/bavix/gripmock-ui/pull/219
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-beta1...v1.0.0-beta2
+
 ## v1.0.0-beta1 - 2024-11-04
 
 ### What's Changed
