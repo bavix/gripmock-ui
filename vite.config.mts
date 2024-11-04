@@ -16,8 +16,6 @@ export default defineConfig({
             output: {
                 manualChunks: {
                     'ra': ['ra-core'],
-                    'react-admin': ['react-admin'],
-                    'react-admin-utils': ['@bavix/react-admin-json-view'],
                     'mui': ['@mui/material', '@mui/icons-material'],
                     'utils': ['lodash/orderBy', 'lodash/filter', 'lodash/iteratee'],
                     'matches': ['fuse.js'],
