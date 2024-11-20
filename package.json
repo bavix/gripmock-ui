@@ -19,7 +19,7 @@
     "@types/node": "^22.9",
     "@types/react": "^18.3",
     "@types/react-dom": "^18.3",
-    "@typescript-eslint/eslint-plugin": "^8.14",
+    "@typescript-eslint/eslint-plugin": "^8.15",
     "@typescript-eslint/parser": "^8.14",
     "@vitejs/plugin-react": "^4.3",
     "eslint": "^8.57",
