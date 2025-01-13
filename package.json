@@ -23,7 +23,7 @@
     "@typescript-eslint/parser": "^8.18",
     "@vitejs/plugin-react": "^4.3",
     "eslint": "^8.57",
-    "eslint-config-prettier": "^9.1",
+    "eslint-config-prettier": "^10.0",
     "eslint-plugin-react": "^7.37",
     "eslint-plugin-react-hooks": "^5.1",
     "prettier": "^3.4",
