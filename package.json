@@ -28,6 +28,6 @@
     "eslint-plugin-react-hooks": "^5.1",
     "prettier": "^3.5",
     "typescript": "^5.7",
-    "vite": "^6.1"
+    "vite": "^6.2"
   }
 }
