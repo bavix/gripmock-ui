@@ -16,7 +16,7 @@
     "react-admin": "^5.7",
     "react-dom": "^19.1",
     "@types/lodash": "^4.17",
-    "@types/node": "^22.14",
+    "@types/node": "^22.15",
     "@types/react": "^19.1",
     "@types/react-dom": "^19.1",
     "@typescript-eslint/eslint-plugin": "^8.31",
