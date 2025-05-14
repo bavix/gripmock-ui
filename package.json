@@ -11,10 +11,7 @@
   },
   "dependencies": {
     "@bavix/react-admin-json-view": "^2.1",
-    "fuse.js": "^7.1",
-    "react": "^19.0",
-    "react-admin": "^5.8",
-    "react-dom": "^19.1",
+    "@mui/material": "^7.1.0",
     "@types/lodash": "^4.17",
     "@types/node": "^22.15",
     "@types/react": "^19.1",
@@ -26,7 +23,11 @@
     "eslint-config-prettier": "^10.1",
     "eslint-plugin-react": "^7.37",
     "eslint-plugin-react-hooks": "^5.2",
+    "fuse.js": "^7.1",
     "prettier": "^3.5",
+    "react": "^19.0",
+    "react-admin": "^5.8",
+    "react-dom": "^19.1",
     "typescript": "^5.8",
     "vite": "^6.3"
   }
