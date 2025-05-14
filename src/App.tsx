@@ -14,16 +14,14 @@ import { Typography } from '@mui/material';
 import {ServiceList} from "./services";
 import StorageIcon from '@mui/icons-material/Storage';
 import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
-import indigoColor from '@mui/material/colors/indigo';
-import deepOrangeColor from '@mui/material/colors/deepOrange';
-import redColor from '@mui/material/colors/red';
+import { indigo, deepOrange, red } from '@mui/material/colors';
 
 const myTheme = {
     ...defaultLightTheme,
     palette: {
-        primary: indigoColor,
-        secondary: deepOrangeColor,
-        error: redColor,
+        primary: indigo,
+        secondary: deepOrange,
+        error: red,
         contrastThreshold: 3,
         tonalOffset: 0.2,
     },
