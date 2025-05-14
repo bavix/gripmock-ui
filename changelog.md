@@ -1,5 +1,65 @@
 # Changelog
 
+## v1.0.1 - 2025-05-14
+
+### What's Changed
+
+* Bump vite from 6.2.1 to 6.2.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/343
+* Bump [@types](https://github.com/types)/react from 19.0.10 to 19.0.11 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/344
+* Bump [@types](https://github.com/types)/react from 19.0.11 to 19.0.12 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/345
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.26.1 to 8.27.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/346
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.26.1 to 8.27.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/347
+* Bump [@types](https://github.com/types)/node from 22.13.10 to 22.13.11 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/348
+* Bump react-admin from 5.6.3 to 5.6.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/353
+* Bump [@types](https://github.com/types)/node from 22.13.11 to 22.13.14 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/354
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.27.0 to 8.28.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/352
+* Bump vite from 6.2.2 to 6.2.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/351
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.27.0 to 8.28.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/349
+* Bump react-admin from 5.6.4 to 5.7.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/355
+* Bump vite from 6.2.3 to 6.2.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/357
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.28.0 to 8.29.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/359
+* Bump [@types](https://github.com/types)/node from 22.13.14 to 22.13.17 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/362
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.28.0 to 8.29.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/360
+* Bump vite from 6.2.4 to 6.2.5 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/363
+* Bump [@types](https://github.com/types)/node from 22.13.17 to 22.14.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/364
+* Bump eslint-plugin-react from 7.37.4 to 7.37.5 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/365
+* Bump react-admin from 5.7.0 to 5.7.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/366
+* Bump react-dom and [@types](https://github.com/types)/react-dom by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/367
+* Bump [@types](https://github.com/types)/react from 19.0.12 to 19.1.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/368
+* Bump typescript from 5.8.2 to 5.8.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/369
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.29.0 to 8.29.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/370
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.29.0 to 8.29.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/371
+* Bump [@types](https://github.com/types)/react-dom from 19.1.1 to 19.1.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/372
+* Bump react-admin from 5.7.1 to 5.7.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/375
+* Bump eslint-config-prettier from 10.1.1 to 10.1.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/374
+* Bump vite from 6.2.5 to 6.2.6 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/373
+* Bump [@vitejs](https://github.com/vitejs)/plugin-react from 4.3.4 to 4.4.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/386
+* Bump react-admin from 5.7.2 to 5.7.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/385
+* Bump vite from 6.2.6 to 6.3.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/384
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.29.1 to 8.30.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/379
+* Bump [@types](https://github.com/types)/react from 19.1.0 to 19.1.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/378
+* Bump [@types](https://github.com/types)/node from 22.14.0 to 22.14.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/376
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.30.1 to 8.31.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/387
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.29.1 to 8.31.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/388
+* Bump vite from 6.3.2 to 6.3.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/389
+* Bump react-admin from 5.7.3 to 5.7.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/391
+* Bump [@types](https://github.com/types)/node from 22.14.1 to 22.15.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/392
+* Bump [@types](https://github.com/types)/node from 22.15.2 to 22.15.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/393
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.31.0 to 8.31.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/394
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.31.0 to 8.31.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/395
+* Bump [@types](https://github.com/types)/react-dom from 19.1.2 to 19.1.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/397
+* Bump vite from 6.3.3 to 6.3.4 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/398
+* Bump vite from 6.3.4 to 6.3.5 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/399
+* Bump eslint-config-prettier from 10.1.2 to 10.1.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/404
+* Bump [@types](https://github.com/types)/node from 22.15.3 to 22.15.17 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/406
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/eslint-plugin from 8.31.1 to 8.32.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/403
+* Bump [@types](https://github.com/types)/react from 19.1.2 to 19.1.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/402
+* Bump [@typescript-eslint](https://github.com/typescript-eslint)/parser from 8.31.1 to 8.32.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/401
+* Bump react-admin from 5.7.4 to 5.8.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/396
+* bump all packages by [@rez1dent3](https://github.com/rez1dent3) in https://github.com/bavix/gripmock-ui/pull/415
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0...v1.0.1
+
 ## v1.0.0-beta3 - 2024-11-04
 
 ### What's Changed
@@ -332,4 +392,3 @@
 * Bump [@types](https://github.com/types)/node from 20.14.0 to 20.14.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/gripmock-ui/pull/70
 
 **Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.0.0-alpha2...v1.0.0-alpha3
-
