@@ -26,7 +26,7 @@
     "fuse.js": "^7.1",
     "prettier": "^3.5",
     "react": "^19.0",
-    "react-admin": "^5.8",
+    "react-admin": "^5.9",
     "react-dom": "^19.1",
     "typescript": "^5.8",
     "vite": "^6.3"
