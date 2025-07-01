@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@bavix/react-admin-json-view": "^2.1",
-    "@mui/material": "^7.1.2",
+    "@mui/material": "^7.2.0",
     "@types/lodash": "^4.17",
     "@types/node": "^24.0",
     "@types/react": "^19.1",
