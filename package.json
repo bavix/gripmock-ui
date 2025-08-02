@@ -25,7 +25,7 @@
     "eslint-plugin-react-hooks": "^5.2",
     "fuse.js": "^7.1",
     "prettier": "^3.6",
-    "react": "^19.0",
+    "react": "^19.1",
     "react-admin": "^5.10",
     "react-dom": "^19.1",
     "typescript": "^5.8",
