@@ -28,7 +28,7 @@
     "react": "^19.0",
     "react-admin": "^5.10",
     "react-dom": "^19.1",
-    "typescript": "^5.8",
+    "typescript": "^5.9",
     "vite": "^7.1"
   }
 }
