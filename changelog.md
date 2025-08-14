@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1 - 2025-08-14
+
+### What's Changed
+
+* Enhance Statistics component data fetching with pagination by [@rez1dent3](https://github.com/rez1dent3) in https://github.com/bavix/gripmock-ui/pull/507
+
+**Full Changelog**: https://github.com/bavix/gripmock-ui/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2025-08-14
 
 ### What's Changed
