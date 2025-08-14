@@ -68,10 +68,18 @@ const HealthCheck = () => {
 
 // Statistics component
 const Statistics = () => {
-    const { data: services, isLoading: servicesLoading } = useGetList('services');
-    const { data: stubs, isLoading: stubsLoading } = useGetList('stubs');
-    const { data: usedStubs, isLoading: usedStubsLoading } = useGetList('stubs/used');
-    const { data: unusedStubs, isLoading: unusedStubsLoading } = useGetList('stubs/unused');
+    const { data: services, isLoading: servicesLoading } = useGetList('services', {
+        pagination: { page: 1, perPage: 9999 }
+    });
+    const { data: stubs, isLoading: stubsLoading } = useGetList('stubs', {
+        pagination: { page: 1, perPage: 9999 }
+    });
+    const { data: usedStubs, isLoading: usedStubsLoading } = useGetList('stubs/used', {
+        pagination: { page: 1, perPage: 9999 }
+    });
+    const { data: unusedStubs, isLoading: unusedStubsLoading } = useGetList('stubs/unused', {
+        pagination: { page: 1, perPage: 9999 }
+    });
 
     if (servicesLoading || stubsLoading || usedStubsLoading || unusedStubsLoading) {
         return <Loading />;
