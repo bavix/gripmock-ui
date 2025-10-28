@@ -14,7 +14,7 @@
     "@mui/material": "^7.3.2",
     "@types/lodash": "^4.17",
     "@types/react": "^19.2",
-    "@types/react-dom": "^19.1",
+    "@types/react-dom": "^19.2",
     "@typescript-eslint/eslint-plugin": "^8.46",
     "@typescript-eslint/parser": "^8.44",
     "@vitejs/plugin-react": "^5.1",
@@ -26,7 +26,7 @@
     "prettier": "^3.6",
     "react": "^19.2",
     "react-admin": "^5.12",
-    "react-dom": "^19.1",
+    "react-dom": "^19.2",
     "typescript": "^5.9",
     "vite": "^7.1"
   }
