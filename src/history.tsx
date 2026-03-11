@@ -1,28 +1,38 @@
 import {
   Datagrid,
+  FunctionField,
   List,
-  TextField,
   SearchInput,
-  FilterButton,
+  TextField,
   TopToolbar,
+  FilterButton,
   ExportButton,
 } from "react-admin";
 import { useState } from "react";
+
 import { readGridDensity, writeGridDensity, type GridDensity } from "./utils/uiPreferences";
 import { DensityToolbarControl } from "./components/table/DensityToolbarControl";
 import { listContentSx } from "./components/table/listStyles";
 import { ActiveFiltersSummary } from "./components/table/ActiveFiltersSummary";
-import { ServiceDetails } from "./features/services/components/ServiceDetails";
+import type { HistoryRecord } from "./types/entities";
 import {
-  MethodsCountField,
-  MethodsField,
-  ServiceDeleteField,
-} from "./features/services/components/ServiceFields";
+  ErrorChipField,
+  HistoryDetails,
+  RequestPreviewField,
+} from "./features/history/components/HistoryFields";
 
-// Custom toolbar
-const SERVICES_GRID_DENSITY_KEY = "gripmock.ui.services.density";
+const historyFilters = [
+  <SearchInput
+    key="search"
+    source="q"
+    alwaysOn
+    placeholder="Search calls..."
+  />,
+];
 
-const ServiceListActions = ({
+const HISTORY_GRID_DENSITY_KEY = "gripmock.ui.history.density";
+
+const HistoryActions = ({
   density,
   onDensityChange,
 }: {
@@ -36,20 +46,9 @@ const ServiceListActions = ({
   </TopToolbar>
 );
 
-// Filters
-const serviceFilters = [
-  <SearchInput
-    key="search"
-    source="q"
-    placeholder="Search services..."
-    alwaysOn
-  />,
-];
-
-// Service List component
-export const ServiceList = () => {
+export const HistoryList = () => {
   const [density, setDensity] = useState<GridDensity>(() =>
-    readGridDensity(SERVICES_GRID_DENSITY_KEY),
+    readGridDensity(HISTORY_GRID_DENSITY_KEY),
   );
   const gridSize = density === "compact" ? "small" : "medium";
   const gridDensitySx =
@@ -65,35 +64,37 @@ export const ServiceList = () => {
 
   return (
     <List
-      filters={serviceFilters}
+      filters={historyFilters}
       actions={
-        <ServiceListActions
+        <HistoryActions
           density={density}
           onDensityChange={(next) => {
             setDensity(next);
-            writeGridDensity(SERVICES_GRID_DENSITY_KEY, next);
+            writeGridDensity(HISTORY_GRID_DENSITY_KEY, next);
           }}
         />
       }
-      filterDefaultValues={{ q: "" }}
       perPage={25}
       sx={listContentSx}
     >
       <ActiveFiltersSummary />
       <Datagrid
+        expand={<HistoryDetails />}
+        bulkActionButtons={false}
+        size={gridSize}
         rowClick="expand"
         expandSingle
-        bulkActionButtons={false}
-        expand={<ServiceDetails />}
-        size={gridSize}
         sx={gridDensitySx}
       >
-        <TextField source="id" sortable />
-        <TextField source="package" sortable />
-        <TextField source="name" sortable />
-        <MethodsCountField />
-        <MethodsField />
-        <ServiceDeleteField />
+        <TextField source="service" />
+        <TextField source="method" />
+        <TextField source="stubId" />
+        <TextField source="timestamp" />
+        <ErrorChipField />
+        <FunctionField
+          label="request"
+          render={(record: HistoryRecord) => <RequestPreviewField record={record} />}
+        />
       </Datagrid>
     </List>
   );
