@@ -1,169 +1,100 @@
 import {
-    Datagrid,
-    List,
-    TextField,
-    Show,
-    SimpleShowLayout,
-    SearchInput,
-    FilterButton,
-    TopToolbar,
-    ExportButton,
-    ArrayField,
-    SingleFieldList,
-    ChipField,
-    useRecordContext,
-} from 'react-admin';
-import { 
-    Box, 
-    Typography, 
-    Card, 
-    CardContent,
-    Chip,
-} from '@mui/material';
-import { 
-    Code, 
-    Functions,
-    Info,
-} from '@mui/icons-material';
+  Datagrid,
+  List,
+  TextField,
+  SearchInput,
+  FilterButton,
+  TopToolbar,
+  ExportButton,
+} from "react-admin";
+import { useState } from "react";
+import { readGridDensity, writeGridDensity, type GridDensity } from "./utils/uiPreferences";
+import { DensityToolbarControl } from "./components/table/DensityToolbarControl";
+import { listContentSx } from "./components/table/listStyles";
+import { ActiveFiltersSummary } from "./components/table/ActiveFiltersSummary";
+import { ServiceDetails } from "./features/services/components/ServiceDetails";
+import {
+  MethodsCountField,
+  MethodsField,
+  ServiceDeleteField,
+} from "./features/services/components/ServiceFields";
 
 // Custom toolbar
-const ServiceListActions = () => (
-    <TopToolbar>
-        <FilterButton />
-        <ExportButton />
-    </TopToolbar>
+const SERVICES_GRID_DENSITY_KEY = "gripmock.ui.services.density";
+
+const ServiceListActions = ({
+  density,
+  onDensityChange,
+}: {
+  density: GridDensity;
+  onDensityChange: (next: GridDensity) => void;
+}) => (
+  <TopToolbar>
+    <FilterButton />
+    <ExportButton />
+    <DensityToolbarControl density={density} onChange={onDensityChange} />
+  </TopToolbar>
 );
 
 // Filters
 const serviceFilters = [
-    <SearchInput key="search" source="q" placeholder="Search services..." alwaysOn />,
+  <SearchInput
+    key="search"
+    source="q"
+    placeholder="Search services..."
+    alwaysOn
+  />,
 ];
 
-// Custom field for methods count
-const MethodsCountField = () => {
-    const record = useRecordContext();
-    if (!record?.methods) return <span>0</span>;
-    return <span>{record.methods.length}</span>;
-};
-
-// Custom field for methods with better display
-const MethodsField = () => {
-    const record = useRecordContext();
-    
-    if (!record?.methods || record.methods.length === 0) {
-        return <span style={{ color: '#999' }}>No methods</span>;
-    }
-
-    return (
-        <Box display="flex" flexWrap="wrap" gap={0.5}>
-            {record.methods.map((method: any, index: number) => (
-                <Chip
-                    key={index}
-                    label={method.name}
-                    size="small"
-                    variant="outlined"
-                    icon={<Functions fontSize="small" />}
-                />
-            ))}
-        </Box>
-    );
-};
-
 // Service List component
-export const ServiceList = () => (
-    <List 
-        filters={serviceFilters}
-        actions={<ServiceListActions />}
-        filterDefaultValues={{ q: '' }}
-        perPage={25}
+export const ServiceList = () => {
+  const [density, setDensity] = useState<GridDensity>(() =>
+    readGridDensity(SERVICES_GRID_DENSITY_KEY),
+  );
+  const gridSize = density === "compact" ? "small" : "medium";
+  const gridDensitySx =
+    gridSize === "small"
+      ? {
+          "& .RaDatagrid-rowCell": { py: 0.35, fontSize: 12 },
+          "& .RaDatagrid-headerCell": { py: 0.65 },
+        }
+      : {
+          "& .RaDatagrid-rowCell": { py: 1.15, fontSize: 14 },
+          "& .RaDatagrid-headerCell": { py: 1.1 },
+        };
+
+  return (
+    <List
+      filters={serviceFilters}
+      actions={
+        <ServiceListActions
+          density={density}
+          onDensityChange={(next) => {
+            setDensity(next);
+            writeGridDensity(SERVICES_GRID_DENSITY_KEY, next);
+          }}
+        />
+      }
+      filterDefaultValues={{ q: "" }}
+      perPage={25}
+      sx={listContentSx}
     >
-        <Datagrid 
-            rowClick="show"
-            bulkActionButtons={false}
-            expand={<ServiceDetails />}
-        >
-            <TextField source="id" sortable />
-            <TextField source="package" sortable />
-            <TextField source="name" sortable />
-            <MethodsCountField />
-            <MethodsField />
-        </Datagrid>
+      <ActiveFiltersSummary />
+      <Datagrid
+        rowClick="expand"
+        expandSingle
+        bulkActionButtons={false}
+        expand={<ServiceDetails />}
+        size={gridSize}
+        sx={gridDensitySx}
+      >
+        <TextField source="id" sortable />
+        <TextField source="package" sortable />
+        <TextField source="name" sortable />
+        <MethodsCountField />
+        <MethodsField />
+        <ServiceDeleteField />
+      </Datagrid>
     </List>
-);
-
-// Service Details component
-const ServiceDetails = ({ record }: { record?: any }) => {
-    if (!record) return null;
-
-    return (
-        <Card sx={{ margin: 2, backgroundColor: '#f5f5f5' }}>
-            <CardContent>
-                <Box display="flex" flexDirection="column" gap={2}>
-                    <Box>
-                        <Typography variant="h6" gutterBottom>
-                            Service Information
-                        </Typography>
-                        <Box display="flex" flexDirection="column" gap={1}>
-                            <Box display="flex" alignItems="center" gap={1}>
-                                <Code fontSize="small" />
-                                <Typography variant="body2">
-                                    <strong>Package:</strong> {record.package}
-                                </Typography>
-                            </Box>
-                            <Box display="flex" alignItems="center" gap={1}>
-                                <Info fontSize="small" />
-                                <Typography variant="body2">
-                                    <strong>Name:</strong> {record.name}
-                                </Typography>
-                            </Box>
-                            <Box display="flex" alignItems="center" gap={1}>
-                                <Functions fontSize="small" />
-                                <Typography variant="body2">
-                                    <strong>Methods:</strong> {record.methods?.length || 0}
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box>
-                        <Typography variant="h6" gutterBottom>
-                            Methods
-                        </Typography>
-                        {record.methods && record.methods.length > 0 ? (
-                            <Box display="flex" flexDirection="column" gap={1}>
-                                {record.methods.map((method: any, index: number) => (
-                                    <Chip
-                                        key={index}
-                                        label={method.name}
-                                        size="small"
-                                        variant="outlined"
-                                        icon={<Functions fontSize="small" />}
-                                    />
-                                ))}
-                            </Box>
-                        ) : (
-                            <Typography variant="body2" color="textSecondary">
-                                No methods available
-                            </Typography>
-                        )}
-                    </Box>
-                </Box>
-            </CardContent>
-        </Card>
-    );
+  );
 };
-
-// Service Show component
-export const ServiceShow = () => (
-    <Show>
-        <SimpleShowLayout>
-            <TextField source="id" />
-            <TextField source="package" />
-            <TextField source="name" />
-            <ArrayField source="methods">
-                <SingleFieldList>
-                    <ChipField source="name" />
-                </SingleFieldList>
-            </ArrayField>
-        </SimpleShowLayout>
-    </Show>
-);
