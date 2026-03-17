@@ -16,7 +16,7 @@
     }
   },
   "dependencies": {
-    "@microlink/react-json-view": "^1.31.6",
+    "@microlink/react-json-view": "^1.31.11",
     "@mui/material": "^7.3.9",
     "@vitejs/plugin-react": "^5.1",
     "fuse.js": "^7.1",
