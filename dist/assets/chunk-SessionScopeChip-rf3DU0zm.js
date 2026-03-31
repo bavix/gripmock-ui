@@ -1,0 +1,1 @@
+import{Qt as e,et as t}from"./chunk-vendor-admin-D6OCrTHD.js";var n=e(),r=({session:e})=>(0,n.jsx)(t,{color:e?`primary`:`default`,variant:e?`filled`:`outlined`,label:e||`Global (no X-GripMock-Session)`,sx:{fontFamily:`ui-monospace, SFMono-Regular, Menlo, monospace`,maxWidth:`100%`}});export{r as t};
