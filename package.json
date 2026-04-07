@@ -16,10 +16,10 @@
     }
   },
   "dependencies": {
-    "@microlink/react-json-view": "^1.31.15",
+    "@microlink/react-json-view": "^1.31.16",
     "@mui/material": "^7.3.9",
     "@vitejs/plugin-react": "^6.0",
-    "fuse.js": "^7.2",
+    "fuse.js": "^7.3",
     "react": "^19.2",
     "react-admin": "^5.14",
     "react-dom": "^19.2",
@@ -32,11 +32,11 @@
     "@types/react-dom": "^19.2",
     "@typescript-eslint/eslint-plugin": "^8.58",
     "@typescript-eslint/parser": "^8.57",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1",
     "eslint-plugin-react-hooks": "^7.0",
     "globals": "^17.4.0",
     "prettier": "^3.8",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.3"
   }
 }
