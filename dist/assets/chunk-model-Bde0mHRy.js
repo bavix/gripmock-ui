@@ -1,0 +1,1 @@
+var e=e=>e.trim(),t=(e,t,n)=>{let r=e.map(e=>e?.session||e?.id).filter(e=>typeof e==`string`&&e.trim().length>0),i=[...t,...r];return n.trim()&&i.unshift(n.trim()),Array.from(new Set(i))};export{e as n,t};
