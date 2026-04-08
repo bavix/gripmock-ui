@@ -1,0 +1,1 @@
+import{Kt as e,P as t,Qt as n}from"./chunk-vendor-admin-DlQ2-AM8.js";import{t as r}from"./chunk-vendor-json-view-CFJ518ZR.js";var i=n(),a=({source:t,jsonString:n=!1,reactJsonOptions:a={}})=>{let o=e()?.[t];if(n&&typeof o==`string`)try{o=JSON.parse(o)}catch{o={}}return(0,i.jsx)(r,{...a,src:o||{}})},o=()=>{let[e]=t();return e===`dark`?`monokai`:`rjv-default`};export{a as n,o as t};
